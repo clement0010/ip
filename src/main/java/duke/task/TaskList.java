@@ -17,6 +17,7 @@ public class TaskList {
     }
 
     public void markTask(int taskId, boolean isDone) throws DukeException {
+        assert taskId > 0 : "Task id should be greater than 0";
         try {
             if (isDone) {
                 tasks.get(taskId).markAsDone();
@@ -29,6 +30,7 @@ public class TaskList {
     }
 
     public void addTask(Task task) {
+        assert task != null : "Cannot add empty task to task list";
         tasks.add(task);
     }
 
@@ -39,6 +41,7 @@ public class TaskList {
 
     public void deleteTask(int taskId) throws DukeException {
         try {
+            assert taskId > 0 : "Task id should be greater than 0";
             tasks.remove(taskId);
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException(e.getMessage());
@@ -47,6 +50,7 @@ public class TaskList {
 
     public Task getTask(int taskId) throws DukeException {
         try {
+            assert taskId > 0 : "Task id should be greater than 0";
             return this.tasks.get(taskId);
         } catch (IndexOutOfBoundsException e) {
             throw new DukeException(e.getMessage());
