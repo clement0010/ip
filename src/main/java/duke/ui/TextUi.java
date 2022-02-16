@@ -5,10 +5,6 @@ import duke.common.Messages;
 import duke.parser.Parser;
 import duke.task.TaskList;
 
-import java.io.InputStream;
-import java.io.PrintStream;
-import java.util.Scanner;
-
 public class TextUi {
     private static final String LOGO = " ____        _        \n"
             + "|  _ \\ _   _| | _____ \n"

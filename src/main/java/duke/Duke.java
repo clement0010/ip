@@ -25,10 +25,6 @@ public class Duke {
         this(DEFAULT_FILE_NAME);
     }
 
-    /**
-     * You should have your own function to generate a response to user input.
-     * Replace this stub with your completed method.
-     */
     protected String getResponse(String fullCommand) {
         try {
             Command c = Parser.parse(fullCommand);

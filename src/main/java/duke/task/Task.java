@@ -1,6 +1,7 @@
 package duke.task;
 
 import duke.DukeException;
+import duke.common.Messages;
 
 public class Task {
     private final String title;
@@ -32,7 +33,7 @@ public class Task {
         } else if (Deadline.class.equals(this.getClass())) {
             return "D";
         } else {
-            throw new DukeException("Unknown Task");
+            throw new DukeException(Messages.MESSAGE_ERROR_INVALID_TASK_TYPE);
         }
 
     }
@@ -44,6 +45,6 @@ public class Task {
     @Override
     public String toString() {
         String stateIcon = this.isDone ? "X" : " ";
-        return String.format("[%s] %s",stateIcon, this.title);
+        return String.format("[%s] %s", stateIcon, this.title);
     }
 }

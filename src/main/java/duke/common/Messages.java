@@ -12,7 +12,9 @@ public class Messages {
     public static final String MESSAGE_ADD_TODO = "Got it. I've added this todo.";
     public static final String MESSAGE_ADD_DEADLINE = "Got it. I've added this deadline.";
     public static final String MESSAGE_ADD_EVENT = "Got it. I've added this event.";
-    public static final String MESSAGE_ERROR_INVALID_COMMAND = "OOPS!!! I'm sorry, but I don't know what that means :-(";
+    public static final String MESSAGE_ERROR_INVALID_COMMAND = "OOPS!!! I'm sorry, but I don't know what that means "
+            + ":-(";
     public static final String MESSAGE_ERROR_EMPTY_TITLE = "OOPS!!! The description of a todo cannot be empty.";
-    public static final String MESSAGE_ERROR_INVALID_DATETIME_FORMAT= "Invalid date time format.";
+    public static final String MESSAGE_ERROR_INVALID_DATETIME_FORMAT = "Invalid date time format.";
+    public static final String MESSAGE_ERROR_INVALID_TASK_TYPE = "Invalid task type";
 }
